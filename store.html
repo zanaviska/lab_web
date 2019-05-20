@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="uft-8">
+    <meta name="viewport" content="width=device-width">
+    <title>Andreas Online Shop | Welcome</title>
+    <link rel="stylesheet" href=".\store.css">
+  </head>
+  <body onload="myMove()">
+    <div class="container">
+      <header><font size="8">Header</font></header>
+      <div class="middle">
+        <div class="menu">
+          <a href='#'><font size="6">List of goods</font></a>
+          <a href='#'><font size="6">Privacy polycy</font></a>
+          <a href='#'><font size="6">Contact us</font></a>
+          <a href='#'><font size="6">Log in</font></a>
+        </div>
+        <div class="center">
+          <form action="./store.html" onsubmit="return myFunction()">
+            Name: <input type="text" id="name" size="20" name="name"><br>
+            Phone: <input type="text" id="phone" size="20" name="phone"><br>
+            E-mail: <input type="text" id="email" size="20" name="mail"><br><br>
+            Text: <input type="text" id="text" size="20" name="text"><br><br>
+            <input type="submit" value="Submit"> 
+          </form>
+          <script type="text/javascript" src="./store.js"></script>
+        </div>
+        <div class="left">
+          <div class="dop">
+            <div class="big" align="center">
+              <div class="circle"></div>
+            </div> 
+          </div>
+          <div class="catalog">
+            <img src='./laptop1.jpg' alt='Italian Trulli'></img>
+            <img src='./laptop2.jpg' alt='Italian Trulli'></img>
+            <img src='./laptop3.jpg' alt='Italian Trulli'></img>
+            <img src='./laptop4.jpg' alt='Italian Trulli'></img>
+          </div>
+        </div>
+      </div>
+      <footer>Contact us!</footer>
+    </div>
+    
+  </body>
+</html>
