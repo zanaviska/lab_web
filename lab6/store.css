@@ -1,0 +1,60 @@
+body {
+  margin: 0;
+  //background-image: url("./gradient_8.png");
+}
+
+
+.container {
+}
+
+header {
+  padding: 75px;
+  text-align: center;
+  //background-color: pink;
+  background-image: url("./wallpaper.jpg");
+  color: aqua;
+}
+
+.middle {
+  height: 500px;
+  display: flex;
+  flex: 1;
+  flex-direction: column;
+  background-image: url("./gradient_8.png");
+}
+
+.search {
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+  flex: 1;
+  flex-direction: column;
+  background-color: blue;
+  //background-image: url("./gradient_8.png");
+}
+
+.info {
+  flex: 1;
+  padding: 20px;
+  background-color: aqua;
+  //background-image: url("./gradient_8.png");
+}
+
+.add {
+  flex: 1;
+  background-color: rgb(255, 102, 0);
+  //background-image: url("./gradient_8.png");
+}
+
+footer {
+  background-color: rgb(95, 15, 15);
+  padding: 10px;
+  text-align: center;
+  color: white;
+  bottom: 0px;
+}
+
+@media screen and (max-width: 500px) {
+
+}
+  
