@@ -1,0 +1,1 @@
+SELECT * FROM lab_web.advanced_filter;

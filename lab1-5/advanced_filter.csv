@@ -1,0 +1,9 @@
+id,parent_id,advanced_filter
+1,1,0
+2,1,"less than 10"
+3,1,"more than 10"
+4,2,"cheaper than 15000"
+5,2,"more than 15000"
+6,3,ASUS
+7,3,ACER
+8,3,DELL

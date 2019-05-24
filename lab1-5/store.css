@@ -1,0 +1,114 @@
+body {
+  margin: 0;
+  background-image: url("./gradient_8.png");
+}
+
+a:hover {
+  background-color: yellow;
+}
+
+.container {
+  display: flex;
+  align-items: stretch;
+  flex-direction: column
+}
+
+header {
+  height: 100%;
+  padding: 75px;
+  text-align: center
+}
+
+.middle {
+  display: flex;
+  flex-direction: row-reverse;
+}
+
+.left {
+  border: 2px solid gray;
+  color: white;
+  flex: 4;
+  display: block;
+  text-align: center;
+  vertical-align: flex-start;
+  height: 100%;
+}
+
+.dop {
+  height: 235px;
+  border: 2px solid gray;
+}
+
+.center {
+  border: 2px solid gray;
+  flex: 1;
+  align-items: stretch;
+}
+
+@font-face {
+  font-family: GraublauWeb;
+  src: url("./GreatVibes-Regular.otf") format("opentype");
+}
+
+.menu {
+  border: 2px solid gray;
+  flex: 2;
+  font-family: GraublauWeb;
+  font-size: 26;
+  flex-direction: column;
+  display: flex;
+}
+
+.catalog {
+  flex: 1;
+}
+
+footer {
+  background-color: rgb(95, 15, 15);
+  padding: 10px;
+  text-align: center;
+  color: white;
+  bottom: 0px;
+}
+
+.big {	
+  border: 1px solid black;
+  background: white;
+  display: table-cell;
+  position: relative;
+  vertical-align: middle;
+  width: 90px;
+  height:60px;
+  transform: rotate(30deg);
+  left: 50px;
+  top: 50px;
+}
+
+.circle{	
+  background: red;	
+  border-radius: 50%;
+  display: table-cell;
+  vertical-align: middle;
+  width: 24px;
+  height:24px;
+  transform: rotate(105deg);
+}   
+
+@media screen and (max-width: 500px) {
+  .middle {
+  display: block;
+  }
+  .dop {
+  height: 0px;
+  }
+}
+
+.text {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.description {
+  flex-direction: row;
+  justify-content: left;
+  float:left;
+}

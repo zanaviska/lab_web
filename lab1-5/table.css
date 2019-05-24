@@ -1,0 +1,38 @@
+table {
+  height: 500px;
+  width: 1000px;
+}
+
+table, td, tr {
+  border: 1px solid black;
+}
+
+tr:nth-child(n+3):nth-child(-n+8) > td:nth-child(n+5):nth-child(-n+6) {
+  background-color: red;
+}
+
+tr:nth-child(n+2):nth-child(-n+4) > td:nth-child(n+4):nth-child(-n+4) {
+  background-color: greenyellow;
+}
+
+tr:nth-child(n+2):nth-child(-n+4) > td:nth-child(n+7):nth-child(-n+7) {
+  background-color: greenyellow;
+}
+
+.big {	
+  border: 1px solid black;
+  background: white;
+  display: table-cell;
+  vertical-align: middle;
+  width: 300px;
+  height:200px;
+  transform: rotate(35deg);
+}
+.middle{	
+  background: red;	
+  border-radius: 50%;
+   display: table-cell;
+  vertical-align: middle;
+    width: 120px;
+  height:120px;
+}   
