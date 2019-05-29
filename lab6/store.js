@@ -23,15 +23,16 @@ work = () => {
     });
   }
   
-  disable = (left, right) => {
-    console.log(left, right);
+  disable = (left, right, cnt) => {
+    //console.log(left, right);
     let x = 0;
-    console.log(document.getElementById("pres").textContent);
-    if(document.getElementById("pres").textContent == 'Book it!')
+    console.log("pres"+String(cnt));
+    //console.log(document.getElementById("pres"+String(cnt)));
+    if(document.getElementById("pres"+String(cnt)).textContent == 'Book it!')
       x = 1,
-      document.getElementById("pres").innerHTML = 'Unbook it!';
+      document.getElementById("pres"+String(cnt)).innerHTML = 'Unbook it!';
     else
-      document.getElementById("pres").innerHTML = 'Book it!';
+      document.getElementById("pres"+String(cnt)).innerHTML = 'Book it!';
     $(".dop").load('php/status.php', {
       stan: x,
       arrive: left,
