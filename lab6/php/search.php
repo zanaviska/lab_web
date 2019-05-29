@@ -17,8 +17,10 @@
     echo '<button id="btn" onclick="book(\''.$arrive.'\', \''.$depart.'\')">Book it!</button>';
   } else {
     echo 'Following days are reserved: <br />';
+    $cntt = 0;
     while($row = mysqli_fetch_assoc($result)) {
-      echo $row['arrive'].'...'.$row['depart'].'<Button id="pres" onclick="disable(\''.$row['arrive'].'\', \''.$row['depart'].'\')">Unbook it!</button>><br/>';
+      echo $row['arrive'].'...'.$row['depart'].'<Button id="pres'.$cntt.'" onclick="disable(\''.$row['arrive'].'\', \''.$row['depart'].'\','.$cntt.')">Unbook it!</button>><br/>';
+      $cntt++;
     }
   }
 ?>
